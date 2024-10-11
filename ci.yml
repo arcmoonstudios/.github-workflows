@@ -31,4 +31,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: xenvleid/xynpro-docker:latest
+          tags: |
+            xenvleid/xynpro-docker:latest
+            xenvleid/xynpro-docker:${{ github.sha }}
